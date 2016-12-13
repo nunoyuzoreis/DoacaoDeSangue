@@ -1,0 +1,432 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="nunoreis.doacaodesangue.RegistrarDoador">
+
+        <!--Nomes-->
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomeDoador"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/nome_doador"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomePai"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/nomeDoador"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp"
+            android:hint="@string/nome_pai"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomeMae"
+            android:inputType="textPersonName"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/nomePai"
+            android:layout_alignParentStart="true"
+            android:hint="@string/nome_mae"
+            android:imeOptions="actionDone"/>
+
+        <!--Data de nascimento-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/botao_data"
+            android:id="@+id/botaoDataNasc"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/nomeMae"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textoDataNasc"
+            android:layout_alignBottom="@+id/botaoDataNasc"
+            android:layout_toEndOf="@id/botaoDataNasc"
+            android:layout_marginLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"/>
+
+        <!--Sexo-->
+        <TextView
+            android:id="@+id/sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sexo"
+            android:layout_below="@id/botaoDataNasc"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/wallet_primary_text_holo_light" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/sexo"
+            android:layout_marginTop="10dp"
+            android:id="@+id/radioSexo">
+
+            <RadioButton
+                android:text="@string/masculino"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMasculino"
+                android:layout_width="wrap_content"
+                android:checked="true">
+            </RadioButton>
+
+            <RadioButton
+                android:text="@string/feminino"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioFeminino"
+                android:layout_width="wrap_content"
+                android:checked="false">
+            </RadioButton>
+
+        </RadioGroup>
+
+        <!--CPF-->
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cpf"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/radioSexo"
+            android:layout_alignParentStart="true"
+            android:hint="@string/cpf"
+            android:inputType="number"
+            android:imeOptions="actionDone"/>
+
+        <!--Estado Civil-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cpf"
+            android:layout_marginTop="25dp"
+            android:id="@+id/estadoCivil"
+            android:text="@string/estadoCivil"
+            android:textColor="@color/wallet_primary_text_holo_light" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/estadoCivil"
+            android:layout_marginTop="10dp"
+            android:id="@+id/radioEstadoCivil">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/solteiro"
+                android:id="@+id/radioSolteiro"
+                android:checked="true"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casado"
+                android:id="@+id/radioCasado"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/separado"
+                android:id="@+id/radioSeparado"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divorciado"
+                android:id="@+id/radioDivorciado"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/viuvo"
+                android:id="@+id/radioViuvo"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <!--Escolaridade-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEscolaridade"
+            android:text="@string/escolaridade"
+            android:layout_below="@id/radioEstadoCivil"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/wallet_primary_text_holo_light" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioEscolaridade"
+            android:layout_below="@id/txtEscolaridade"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioFundamental"
+                android:checked="true"
+                android:text="@string/fundamental"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMedio"
+                android:checked="false"
+                android:text="@string/medio"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioTecnico"
+                android:checked="false"
+                android:text="@string/tecnico"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioSuperInc"
+                android:checked="false"
+                android:text="@string/superiorinc"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioSuperComp"
+                android:checked="false"
+                android:text="@string/superiorcomp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioPos"
+                android:checked="false"
+                android:text="@string/posgrad"/>
+
+        </RadioGroup>
+
+        <!--Telefone-->
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/telefone"
+            android:id="@+id/telefone"
+            android:layout_below="@id/radioEscolaridade"
+            android:layout_marginTop="25dp"
+            android:imeOptions="actionNext"
+            android:inputType="phone" />
+
+        <!--Naturalidade-->
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/naturalidade"
+            android:id="@+id/naturalidade"
+            android:layout_below="@id/telefone"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+        <!--Nacionalidade-->
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nacionalidade"
+            android:layout_below="@id/naturalidade"
+            android:id="@+id/nacionalidade"
+            android:layout_marginTop="25dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+        <!--Endereço residencial-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtResidencial"
+            android:text="@string/residencial"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/nacionalidade"
+            android:textColor="@color/wallet_primary_text_holo_light" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rLogradouro"
+            android:hint="@string/logradouro"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtResidencial"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rNome"
+            android:hint="@string/nome_rua"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rLogradouro"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rNumero"
+            android:hint="@string/numero"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rNome"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rBairro"
+            android:hint="@string/bairro"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rNumero"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rCidade"
+            android:hint="@string/cidade"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rBairro"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rEstado"
+            android:hint="@string/estado"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rCidade"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <!--Endereço Comercial-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtProfissional"
+            android:text="@string/profissional"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/rEstado"
+            android:textColor="@color/wallet_primary_text_holo_light"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pLogradouro"
+            android:hint="@string/logradouro"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtProfissional"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pNome"
+            android:hint="@string/nome_rua"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/pLogradouro"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pNumero"
+            android:hint="@string/numero"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/pNome"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pBairro"
+            android:hint="@string/bairro"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/pNumero"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pCidade"
+            android:hint="@string/cidade"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/pBairro"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pEstado"
+            android:hint="@string/estado"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/pCidade"
+            android:imeOptions="actionDone"
+            android:inputType="text"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pEstado"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:layout_weight="0.50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/botao_cancelar_doador"
+                android:text="@string/botao_cancelar"/>
+            <Button
+                android:layout_weight="0.50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/botao_registrar_doador"
+                android:text="@string/botao_registrar"
+                android:layout_toEndOf="@+id/botao_cancelar_doador"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

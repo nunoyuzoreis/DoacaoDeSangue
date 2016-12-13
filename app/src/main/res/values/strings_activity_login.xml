@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="prompt_userName">Nome de Usuário</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Esta senha é muito curta</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Este campo é obrigatório</string>
+
+    <string name="login_funcionario">Interface Funcionário</string>
+    <string name="login_gerente">Interface Gerente</string>
+    <string name="link_gerente">Clique aqui para fazer login como gerente</string>
+    <string name="title_activity_login_gerente">Login Gerente</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Nomes-->
+    <string name="nome_doador">Nome do Doador</string>
+    <string name="nome_pai">Nome do Pai</string>
+    <string name="nome_mae">Nome da Mãe</string>
+    
+    <!--Data de nascimento-->
+    <string name="dia">dd</string>
+    <string name="mes">mm</string>
+    <string name="ano">aaaa</string>
+    <!--************************************-->
+    
+    <!--Botoes-->
+    <string name="botao_data">Data de Nascimento</string>
+    <string name="botao_cancelar">Cancelar</string>
+    <string name="botao_registrar">Registrar</string>
+    <!--************************************-->
+    
+    <!--RadioGroups-->
+    <string name="sexo">Sexo</string>
+    <string name="estadoCivil">Estado Civil</string>
+    <string name="escolaridade">Escolaridade</string>
+    <!--************************************-->
+    
+    <!--CPF-->
+    <string name="cpf">CPF</string>
+    <!--************************************-->
+
+    <!--RadioButtons sexo-->
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <!--************************************-->
+    
+    <!--RadioButtons estado civil-->
+    <string name="solteiro">Solteiro</string>
+    <string name="casado">Casado</string>
+    <string name="separado">Separado Judicialmente</string>
+    <string name="divorciado">Divorciado</string>
+    <string name="viuvo">Viúvo</string>
+    <!--************************************-->
+
+    <!--RadioButtons escolaridade-->
+    <string name="fundamental">Fundamental</string>
+    <string name="medio">Médio</string>
+    <string name="tecnico">Técnico</string>
+    <string name="superiorinc">Superior Incompleto</string>
+    <string name="superiorcomp">Superior Completo</string>
+    <string name="posgrad">Pós-Graduado</string>
+    <!--************************************-->
+
+    <!--Telefone-->   
+    <string name="telefone">Telefone</string>
+    <!--************************************-->
+    
+    <!--Naturalidade e Nacionalidade-->
+    <string name="naturalidade">Naturalidade</string>
+    <string name="nacionalidade">Nacionalidade</string>
+    <!--************************************-->
+
+    <!--Endereço-->
+    <string name="residencial">Endereço Residencial</string>
+    <string name="profissional">Endereço Profissional</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="nome_rua">Nome da Rua</string>
+    <string name="numero">Número</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
+    <!--************************************-->
+
+
+</resources>

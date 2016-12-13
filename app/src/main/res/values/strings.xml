@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HemoSystem</string>
+    <string name="title_activity_main">Login Funcionário</string>
+    <string name="action_settings">Settings</string>
+    <string name="registrar_doador">Registrar Doador</string>
+    <string name="prompt_nome">Nome Doador</string>
+    <string name="title_activity_registrar_doador">Registrar Doador</string>
+    <string name="title_activity_interface_principal">HemoSystem</string>
+    <string name="title_activity_interface_principal_gerente">Interface Gerente</string>
+    <string name="title_activity_registrar_funcionario">Registrar Funcionario</string>
+
+</resources>

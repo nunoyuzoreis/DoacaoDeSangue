@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="registrar_doacao">Registrar Doação</string>
+    <string name="registrar_exames">Registrar Exames</string>
+    <string name="registrar_bolsa">Registrar Bolsa de Sangue</string>
+
+
+</resources>
